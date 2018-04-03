@@ -8,13 +8,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { FixturesComponent } from './compoments/fixtures/fixtures.component';
 import { StandingsComponent } from './compoments/standings/standings.component';
+import { NavComponent } from './components/nav/nav.component';
+import { NewsComponent } from './components/news/news.component';
+import { TablesComponent } from './components/tables/tables.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FixturesComponent,
-    StandingsComponent
+    StandingsComponent,
+    NavComponent,
+    NewsComponent,
+    TablesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

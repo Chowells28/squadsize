@@ -2,10 +2,10 @@
 <div class="fixturesContainer">
   <ul class="list-group">
     <li *ngFor="let fixture of fixturesData" class="list-group-item text-center fixture-h-a-team">
+      <span class="match-time">{{ fixture.match_time }}</span>
       <span class="f-home-team">{{ fixture.match_hometeam_name }}</span>
-      <span class="match-time">
+      <span class="match-score">
           <span class="f-home-team-score">{{ fixture.match_hometeam_score }}</span>
-          <span *ngIf="fixture.match_status">{{ fixture.match_status }}</span>
           <span class="f-away-team-score">{{ fixture.match_awayteam_score }}</span>
         </span>
       <span class="f-away-team">{{ fixture.match_awayteam_name }}</span>

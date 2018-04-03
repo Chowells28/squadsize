@@ -8,6 +8,7 @@ import { FixturesService } from '../../services/fixtures.service';
 })
 export class FixturesComponent implements OnInit {
   fixturesData: any;
+  isPostponed = true;
 
   constructor(private fixturesService: FixturesService) { }
 

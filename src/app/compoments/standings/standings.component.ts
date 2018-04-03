@@ -8,14 +8,20 @@ import { StandingsService } from './../../services/standings.service';
 })
 export class StandingsComponent implements OnInit {
   standingsData: any;
+  standingsDataTeams = [];
+  setTeamNames: any;
 
   constructor(private standingsService: StandingsService) { }
 
   ngOnInit() {
-    this.standingsService.getStandings().subscribe(response => {
-      this.standingsData = response.json();
+    this.standingsService.getStandings().subscribe(data => {
+      this.standingsData = data.json();
       this.standingsData.sort((a, b) => a.overall_league_position - b.overall_league_position);
-      console.log(this.standingsData);
+      // return this.standingsData;
+      console.log('This is the response obj ', this.standingsData);
+      for (let i = 0; i <= this.standingsData.length; i++) {
+        this.standingsDataTeams.push(this.standingsData[i].team_name);
+      }
     });
   }
 
