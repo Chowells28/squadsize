@@ -1,4 +1,3 @@
-import { StandingsService } from './services/standings.service';
 import { FixturesService } from './services/fixtures.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,6 +11,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { NewsComponent } from './components/news/news.component';
 import { TablesComponent } from './components/tables/tables.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TeamsComponent } from './components/teams/teams.component';
+import { TeamsService } from './services/teams.service';
 
 
 @NgModule({
@@ -22,13 +23,14 @@ import { FooterComponent } from './components/footer/footer.component';
     NavComponent,
     NewsComponent,
     TablesComponent,
-    FooterComponent
+    FooterComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
-  providers: [FixturesService, StandingsService],
+  providers: [FixturesService, TeamsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

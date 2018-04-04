@@ -8,7 +8,7 @@ import { StandingsService } from './../../services/standings.service';
 })
 export class StandingsComponent implements OnInit {
   standingsData: any;
-  standingsDataTeams = [];
+  standingsDataTeams: any [];
   setTeamNames: any;
 
   constructor(private standingsService: StandingsService) { }
