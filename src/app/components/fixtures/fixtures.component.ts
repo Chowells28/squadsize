@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fixtures.component.css']
 })
 export class FixturesComponent implements OnInit {
+  fixturesData: any;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

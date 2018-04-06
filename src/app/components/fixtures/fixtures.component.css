@@ -1,0 +1,43 @@
+.fixture-h-a-team {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+  }
+  
+  .f-home-team {
+    width: 45%;
+    float: left;
+    text-align: right;
+    vertical-align: middle;
+    padding: 10px 10px 10px 0;
+  }
+  
+  .match-score {
+    width: 10%;
+    float: left;
+  }
+  
+  .f-away-team {
+    width: 45%;
+    float: left;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px 0 10px 10px;
+  }
+  
+  .f-home-team-score,
+  .f-away-team-score {
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+    height: auto;
+  }
+  
+  .is-postponed {
+    width: 10%;
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
