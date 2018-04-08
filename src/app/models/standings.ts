@@ -1,0 +1,30 @@
+export interface Standings {
+  country_name: any;
+  league_id: any;
+  league_name: any;
+  team_name: any;
+  overall_league_position: any;
+  overall_league_payed: any;
+  overall_league_W: any;
+  overall_league_D: any;
+  overall_league_L: any;
+  overall_league_GF: any;
+  overall_league_GA: any;
+  overall_league_PTS: any;
+  home_league_position: any;
+  home_league_payed: any;
+  home_league_W: any;
+  home_league_D: any;
+  home_league_L: any;
+  home_league_GF: any;
+  home_league_GA: any;
+  home_league_PTS: any;
+  away_league_position: any;
+  away_league_payed: any;
+  away_league_W: any;
+  away_league_D: any;
+  away_league_L: any;
+  away_league_GF: any;
+  away_league_GA: any;
+  away_league_PTS: any;
+}

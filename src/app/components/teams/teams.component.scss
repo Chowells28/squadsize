@@ -1,0 +1,36 @@
+.league-name-title,
+.team-name-title {
+  border-left: 3px solid #6D524D;
+  background-color: #8B7B78;
+  color: #FFFFFF;
+  padding: 0.75rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-title.team-name-title {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card {
+  margin-bottom: 1.8rem;
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+ul.team-short-info-container {
+  padding-left: 15px;
+}
+
+li.team-short-info {
+  font-size: 15px;
+}
+
+.team-short-info-number {
+  display: inline-block;
+  font-weight: bold;
+}

@@ -1,54 +1,20 @@
 <div class="row">
-
-  <div *ngFor="let team of arrData" class="col-md-4">
-
-    <!--Section: Live preview-->
-    <section>
-
-      <!--Card Regular-->
-      <div class="card card-cascade">
-
-        <!--Card image-->
-        <div class="view overlay">
-          <img src="" class="img-fluid" alt="">
-          <a>
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
-        <!--/.Card image-->
-
-        <!--Card content-->
-        <div class="card-body text-center">
-          <!--Title-->
-          <h4 class="card-title">
-            <strong>{{ team.team_name }}</strong>
-          </h4>
-          <h5>{{ team.league_name }}</h5>
-
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod
-            quibusdam.
-          </p>
-
-          <!--Facebook-->
-          <a type="button" class="btn-floating btn-small btn-fb">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <!--Twitter-->
-          <a type="button" class="btn-floating btn-small btn-tw">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <!--Google +-->
-          <a type="button" class="btn-floating btn-small btn-dribbble">
-            <i class="fa fa-dribbble"></i>
-          </a>
-
-        </div>
-        <!--/.Card content-->
-
+  <div class="col">
+    <h1 class="league-name-title">EFL {{leagueName}} Teams</h1>
+  </div>
+</div>
+<div class="row">
+  <div *ngFor="let name of teamName" class="col-md-4">
+    <div class="card" style="width: auto;">
+      <div class="card-body">
+        <h5 class="card-title team-name-title">{{name.team_name}}</h5>
+        <ul class="team-short-info-container">
+          <li class="team-short-info">Overall League Position: <span class="team-short-info-number">{{name.overall_league_position}}</span></li>
+          <li class="team-short-info">Home League Position: <span class="team-short-info-number">{{name.home_league_position}}</span></li>
+          <li class="team-short-info">Away league Position: <span class="team-short-info-number">{{name.away_league_position}}</span></li>
+        </ul>
+        <button type="button" class="btn btn-outline-secondary">Club Info</button>
       </div>
-      <!--/.Card Regular-->
-
-    </section>
-    <!--Section: Live preview-->
+    </div>
   </div>
 </div>

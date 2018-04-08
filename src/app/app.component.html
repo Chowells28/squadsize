@@ -1,8 +1,25 @@
-<div class="fluid-container">
-  <header></header>
-  <app-nav></app-nav>
-  <div class="container">
-    <h1>Squadsize.com</h1>
-    <app-countries></app-countries>
-  </div>
-</div>
+<app-header></app-header>
+
+<main>
+  <section>
+    <app-carousel></app-carousel>
+  </section>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-md">
+              <app-teams></app-teams>
+            </div>
+            <div class="col-md-4">
+              <app-tables-condensed></app-tables-condensed>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-footer></app-footer>

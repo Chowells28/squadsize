@@ -11,6 +11,9 @@ import { TablesComponent } from './components/tables/tables.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TeamsComponent } from './components/teams/teams.component';
 import { CountriesComponent } from './components/countries/countries.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TablesCondensedComponent } from './components/tables-condensed/tables-condensed.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { CountriesComponent } from './components/countries/countries.component';
     TablesComponent,
     FooterComponent,
     TeamsComponent,
-    CountriesComponent
+    CountriesComponent,
+    HeaderComponent,
+    TablesCondensedComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

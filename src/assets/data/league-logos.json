@@ -1,0 +1,16 @@
+[{
+    "leagueName": "Premier League",
+    "leagueLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/500px-Premier_League_Logo.svg.png"
+  },
+  {
+    "leagueName": "EFL Championship",
+    "leagueLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/EFL_Championship.svg/300px-EFL_Championship.svg.png"
+  },
+  {
+    "leagueName": "EFL League One",
+    "leagueLogo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/EFL_League_One.svg/300px-EFL_League_One.svg.png"
+  },
+  {
+    "leagueName": "EFL League Two",
+    "leagueLogo": ""
+  }]

@@ -1,3 +1,5 @@
+import { Competitions } from './../../models/countries-competitions';
+import { Country } from './../../models/countries';
 import { ApifootballService } from './../../services/apifootball.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,15 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./countries.component.css']
 })
 export class CountriesComponent implements OnInit {
-  countries: any;
+  countries: Country[];
+  countriesComps: Competitions[];
 
   constructor(private apifootballService: ApifootballService) { }
 
   ngOnInit() {
-    this.apifootballService.getCountries().subscribe(response => {
-      this.countries = response.json();
-      console.log(this.countries);
-    });
+   this.apifootballService.getCountries().subscribe(data => {
+     this.countries = data;
+   });
+
+   this.apifootballService.getCompetitions().subscribe(data => {
+    this.countriesComps = data;
+  });
 
   }
 
