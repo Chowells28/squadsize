@@ -1,32 +1,39 @@
 <div class="row">
   <div class="col">
-    <h1 class="league-table-title">EFL Table</h1>
+    <div class="card" style="width: auto;">
+      <div class="card-body">
+        <h1 class="card-title league-table-title">EFL Table</h1>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
   <div class="col">
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Team</th>
-            <th scope="col">Pld</th>
-            <th scope="col">GD</th>
-            <th scope="col">Pts</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let team of tablePositions">
-            <th scope="row">{{ team.overall_league_position }}</th>
-            <td class="tc-team-name">{{ team.team_name }}</td>
-            <td class="tc-team-games-played">{{ team.overall_league_payed }}</td>
-            <td class="tc-team-goal-difference">{{ team.overall_league_GF - team.overall_league_GA }}</td>
-            <td class="tc-team-points">{{ team.overall_league_PTS }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="card" style="width: auto;">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Team</th>
+                <th scope="col">Pld</th>
+                <th scope="col">GD</th>
+                <th scope="col">Pts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let team of tablePositions">
+                <th scope="row">{{ team.overall_league_position }}</th>
+                <td class="tc-team-name">{{ team.team_name }}</td>
+                <td class="tc-team-games-played">{{ team.overall_league_payed }}</td>
+                <td class="tc-team-goal-difference">{{ team.overall_league_GF - team.overall_league_GA }}</td>
+                <td class="tc-team-points">{{ team.overall_league_PTS }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
-
 </div>

@@ -1,6 +1,10 @@
 <div class="row">
   <div class="col">
-    <h1 class="league-name-title">EFL {{leagueName}} Teams</h1>
+    <div class="card" style="width: auto;">
+      <div class="card-body">
+        <h1 class="card-title league-name-title">EFL {{leagueName}} Teams</h1>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
@@ -8,11 +12,22 @@
     <div class="card" style="width: auto;">
       <div class="card-body">
         <h5 class="card-title team-name-title">{{name.team_name}}</h5>
-        <ul class="team-short-info-container">
-          <li class="team-short-info">Overall League Position: <span class="team-short-info-number">{{name.overall_league_position}}</span></li>
-          <li class="team-short-info">Home League Position: <span class="team-short-info-number">{{name.home_league_position}}</span></li>
-          <li class="team-short-info">Away league Position: <span class="team-short-info-number">{{name.away_league_position}}</span></li>
-        </ul>
+        <p class="team-intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad fugiat maxime, accusantium incidunt, voluptatibus
+          voluptate ducimus, placeat ab pariatur ipsum laborum. Ullam nisi enim, dignissimos saepe rerum eligendi sunt.</p>
+        <div class="row no-gutters">
+          <div class="col">
+           <span class="team-short-info">Overall League Position</span>
+           <span class="team-short-info-number">{{name.overall_league_position}}</span>
+          </div>
+          <div class="col">
+              <span class="team-short-info">Home League Position</span>
+              <span class="team-short-info-number">{{name.home_league_position}}</span>
+          </div>
+          <div class="col">
+              <span class="team-short-info">Away league Position</span>
+              <span class="team-short-info-number">{{name.away_league_position}}</span>
+          </div>
+        </div>
         <button type="button" class="btn btn-outline-secondary">Club Info</button>
       </div>
     </div>
