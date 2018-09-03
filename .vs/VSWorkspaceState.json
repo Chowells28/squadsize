@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\tables",
+    "\\src\\app\\components\\tables-condensed",
+    "\\src\\app\\components\\teams",
+    "\\src\\app\\services",
+    "\\src\\scss"
+  ],
+  "SelectedNode": "\\src\\app\\services\\apifootball.service.ts",
+  "PreviewInSolutionExplorer": false
+}
