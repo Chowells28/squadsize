@@ -14,6 +14,7 @@ import { CountriesComponent } from './components/countries/countries.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TablesCondensedComponent } from './components/tables-condensed/tables-condensed.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [ApifootballService],
   bootstrap: [AppComponent]
